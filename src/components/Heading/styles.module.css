@@ -1,0 +1,19 @@
+.heading {
+  color: var(--primary);
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.heading button {
+  cursor: pointer;
+  color: var(--primary);
+  background-color: transparent;
+  border: none;
+}
+
+.heading button:hover {
+  color: var(--link-hover);
+}
