@@ -34,7 +34,6 @@ export function App() {
               type='text'
               labelText='task'
               placeholder='Digite algo'
-              disabled
             />
           </div>
 
