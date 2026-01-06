@@ -8,7 +8,7 @@ export function App() {
 
   return (
     <>
-      <Heading></Heading>
+      <Heading>Olá, Mundo!</Heading>
       <p>
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
         voluptatem repudiandae consectetur, odit, esse, iusto laudantium
