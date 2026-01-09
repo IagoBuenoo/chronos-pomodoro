@@ -8,8 +8,9 @@ import { CountDown } from './components/Countdown';
 import { DefaultInput } from './components/DefaultInput';
 import { Cycles } from './components/Cycles';
 import { DefaultButton } from './components/DefaultButton';
-import { HeartIcon, PlayCircleIcon } from 'lucide-react';
 import { Footer } from './components/Footer';
+
+import { HeartIcon, PlayCircleIcon } from 'lucide-react';
 
 export function App() {
   return (
