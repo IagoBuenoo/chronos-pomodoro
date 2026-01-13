@@ -6,9 +6,12 @@ import { DefaultInput } from '../DefaultInput';
 
 import styles from './styles.module.css';
 
-export function MainForm() {
+import type { HomeProps } from '../../pages/Home';
+
+export function MainForm({ state }: HomeProps) {
   return (
     <form className={styles.form} action=''>
+      <p>A próxima pausa será de {state.config.shortBreakTime} minutos</p>
       <div className={styles.formRow}>
         <DefaultInput
           id='input'
