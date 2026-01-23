@@ -1,6 +1,6 @@
-import { Link } from 'react-router';
 import styles from './styles.module.css';
 import type React from 'react';
+import { RouterLink } from '../RouterLink';
 
 type FooterProps = {
   icon: React.ReactNode;
@@ -9,12 +9,12 @@ type FooterProps = {
 export function Footer({ icon }: FooterProps) {
   return (
     <footer className={styles.footer}>
-      <Link to='/about-pomodoro/'>
+      <RouterLink href='/about-pomodoro/'>
         Entenda como funciona a técnica pomodoro
-      </Link>
-      <Link to='/'>
+      </RouterLink>
+      <RouterLink href='/'>
         Chronos Pomodoro &copy; {new Date().getFullYear()} - Feito com {icon}
-      </Link>
+      </RouterLink>
     </footer>
   );
 }
