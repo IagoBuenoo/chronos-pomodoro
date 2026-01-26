@@ -52,7 +52,7 @@ export function taskReducer(
         formattedSecondsRemaining: '00:00',
         tasks: state.tasks.map(task => {
           if (state.activeTask && state.activeTask.id === task.id) {
-            return { ...task, interruptDate: Date.now() };
+            return { ...task, completeDate: Date.now(), interruptDate: null };
           }
           return task;
         }),
