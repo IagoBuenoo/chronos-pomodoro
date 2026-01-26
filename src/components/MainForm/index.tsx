@@ -17,6 +17,7 @@ import { showMessage } from '../../adapters/showMessage';
 export function MainForm() {
   const { state, dispatch } = useContext(TaskContext);
   const taskNameInput = useRef<HTMLInputElement>(null);
+  const lastTaskName = state.tasks[state.tasks.length - 1]?.name || '';
 
   // ciclos
   const nextCycle = getNextCycle(state.currentCycle);
@@ -79,6 +80,7 @@ export function MainForm() {
           }} */
           ref={taskNameInput}
           disabled={!!state.activeTask}
+          defaultValue={lastTaskName}
         />
       </div>
       <div className={styles.formRow}>
