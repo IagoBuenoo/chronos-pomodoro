@@ -60,6 +60,15 @@ export function taskReducer(
       };
     }
 
+    case TaskActionTypes.UPDATE_CONFIG: {
+      return {
+        ...state,
+        config: {
+          ...action.payload,
+        },
+      };
+    }
+
     case TaskActionTypes.RESET_STATE: {
       return { ...initialTaskState };
     }
