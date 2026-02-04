@@ -14,6 +14,10 @@ import { showMessage } from '../../adapters/showMessage';
 import { TaskActionTypes } from '../../contexts/TaskContext/taskActions';
 
 export function History() {
+  useEffect(() => {
+    document.title = 'Histórico - Chronos Pomodoro';
+  }, []);
+
   const { state, dispatch } = useContext(TaskContext);
   const hasTasks = state.tasks.length > 0;
 
